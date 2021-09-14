@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Advanced Search</title>
+    <style>
+
+    #link{
+        display: block;
+        text-align: right;
+        margin: 30px;
+        font-size: 20px;
+        }
+
+     #image{
+        width: 110px;
+        height: 45px;
+        margin-left: 15px;
+     }
+
+     .title{
+     margin-left: 45px;
+     color: #F00000;
+     font-family: Arial;
+     font-weight: normal;
+     }
+
+     .title1{
+     margin-left: 45px;
+     font-family: Arial;
+     font-weight: normal;
+     }
+
+     .settings{
+     display: grid;
+     grid-row-gap: 30px;
+     grid-column-gap: 70px;
+     grid-template-columns: max-content max-content;
+     margin-left: 45px;
+     }
+
+     #submit{
+     border: none;
+     color: white;
+     background-color: #0000FF;
+     font-size: 15px;
+     padding: 7px;
+     font-weight: strong;
+     margin-left: 60px;
+     }
+
+     #ip1, #ip2, #ip3, #ip4{
+     width: 700px;
+     height: 30px;
+     }
+
+    </style>
+</head>
+<body>
+    <a href="Google_search.html" id="link">Google Search</a>
+    <img src="Google.jpg" id="image">
+    <br/>
+    <h2 class="title">Advanced Search</h2>
+    <hr>
+    <br/><br/>
+    <h3 class="title1">Find pages with...</h3>
+    <br/>
+    <form action="https://www.google.com/search">
+
+        <div class="settings">
+
+        <label for="ip1" class="label">all these words:</label>
+        <input type="text" name="as_q" id="ip1" class="input">
+
+
+        <label for="ip2" class="label">this exact word or phrase:</label>
+        <input type="text" name="as_epq" id="ip2" class="input">
+
+
+        <label for="ip3" class="label">any of these words:</label>
+        <input type="text" name="as_oq" id="ip3" class="input">
+
+
+
+        <label for="ip4" class="label">none of these words:</label>
+        <input type="text" name="as_eq" id="ip4" class="input">
+
+        </div>
+
+        <br/><br/>
+        <button id="submit">Advanced Search</button>
+
+    </form>
+</body>
+</html>

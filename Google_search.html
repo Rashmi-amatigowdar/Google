@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    #link{
+    text-align: right;
+    margin: 30px;
+    font-size: 20px;
+    }
+
+    #image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+    padding: 30px;
+    }
+
+    #input-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    }
+
+    #input-container #search{
+    position: absolute;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    margin-left: 25%;
+
+    }
+
+    #input-container #input-field{
+    width: 50%;
+    padding-left: 40px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-left: 25%;
+
+    }
+    #input-container #input-field:focus{
+    border: 0;
+    border-radius: 20px;
+    }
+
+    #btn{
+    position: relative;
+    text-align: center;
+    }
+
+    .btn1{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    }
+
+    .btn1:hover{
+    border: 1px solid #A0A0A0;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id="link">
+    //Navigate to Google Image Page
+    <a href="Google_image.html">Google Image</a>
+    <br/>
+    //Navigate to Google Advanced search page
+    <a href="Google_Advancedsearch.html">Google Advanced Search</a>
+    </div>
+    <img src="Google.jpg" alt="GOOGLE" id="image">
+
+    <form action="https://google.com/search">
+        <div id="input-container">
+            <img src="search_icon.png" id="search">
+            <input type="text" name="q" id="input-field">
+        </div>
+        <br/>
+        <div id="btn">
+        <input type="submit" name="btnK" value="Google Search" class="btn1">
+        <input type="submit" name="btnI" value="I'm feeling lucky" class="btn1" >
+        </div>
+    </form>
+</body>
+</html>

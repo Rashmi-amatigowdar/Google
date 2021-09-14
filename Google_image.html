@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #link{
+        display: block;
+        text-align: right;
+        font-size: 20px;
+        margin: 30px;
+        }
+        #image{
+        width: 450px;
+        height: auto;
+        max-width: 100%;
+        padding: 30px;
+        display: block;
+        margin: auto;
+        margin-top: 70px;
+        }
+
+        #input-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        vertical-align: middle;
+        }
+
+        #input-container #search{
+        position: absolute;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        margin-left: 25%;
+        }
+
+        #input-container #input-field{
+        width: 50%;
+        padding-left: 40px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 20px;
+        border-radius: 20px;
+        margin-left: 25%;
+        }
+
+        #input-container #input-field:focus{
+        border: 0;
+        border-radius: 20px;
+        }
+
+        #input-container #button{
+        position: absolute;
+        border: 0;
+        padding: 2.5px;
+        font-size: 20px;
+        color: blue;
+        background: white;
+        margin-left: 76%
+        }
+
+    </style>
+</head>
+
+<body>
+   <a href="Google_search.html" id="link">Google Search</a>
+   <img src="Google_image.png" id="image">
+
+   <form action="https://www.google.com/images">
+
+       <div id="input-container">
+            <img src="search_icon.png" id="search">
+            <input type="text" name="q" id="input-field">
+            <button type="submit" id="button"><i class="fa fa-search"></i></button>
+        </div>
+
+   </form>
+</body>
+</html>
